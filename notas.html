@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calificaciones académicas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="contenedor barra-navegacion">
+        <div class="logo">AcademiaPlus</div>
+        <button id="botonCerrarSesion" class="boton-secundario">Cerrar sesión</button>
+      </div>
+    </header>
+
+    <main class="seccion-notas">
+      <div class="contenedor">
+        <h1>Calificaciones académicas</h1>
+        <p id="informacionUsuario"></p>
+
+        <section id="seccionProfesor" class="bloque-notas oculto">
+          <h2>Agregar una calificación</h2>
+          <form id="formularioNota" class="formulario-nota">
+            <label>
+              Materia
+              <input type="text" id="materiaNota" required />
+            </label>
+            <label>
+              Calificación
+              <input type="number" id="calificacionNota" min="0" max="10" step="0.1" required />
+            </label>
+            <button type="submit" class="boton-login">Guardar calificación</button>
+          </form>
+        </section>
+
+        <section class="bloque-notas">
+          <h2>Lista de calificaciones</h2>
+          <div id="listaNotas"></div>
+        </section>
+      </div>
+    </main>
+
+    <script src="notas.js"></script>
+  </body>
+</html>

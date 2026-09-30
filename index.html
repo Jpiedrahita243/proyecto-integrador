@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universidad Académica</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="contenedor barra-navegacion">
+        <div class="logo">AcademiaPlus</div>
+        <nav class="menu-navegacion">
+          <a href="#inicio">Inicio</a>
+          <a href="#cursos">Cursos</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="portada" id="inicio">
+      <div class="contenedor contenido-portada">
+        <div class="texto-portada">
+          <h1>Tu futuro empieza con una buena educación</h1>
+          <p>
+            En AcademiaPlus te ayudamos a aprender con programas académicos, apoyo de
+            docentes y herramientas digitales para que avances paso a paso en tu carrera.
+          </p>
+          <a href="#cursos" class="boton-principal">Ver cursos</a>
+        </div>
+
+        <div class="tarjeta-resumen">
+          <h3>Resumen del semestre</h3>
+          <p>Tu progreso académico</p>
+          <div class="estadisticas">
+            <div class="dato-estadistico">
+              <strong>24</strong>
+              <span>Cursos</span>
+            </div>
+            <div class="dato-estadistico">
+              <strong>85%</strong>
+              <span>Éxito</span>
+            </div>
+            <div class="dato-estadistico">
+              <strong>14k</strong>
+              <span>Estudiantes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-login" id="login">
+      <div class="contenedor bloque-login">
+        <div class="titulo-login">
+          <h2>Iniciar sesión</h2>
+          <p>Accede con tu usuario, contraseña y rol.</p>
+        </div>
+
+        <form id="formLogin" class="formulario-login">
+          <label>
+            Usuario
+            <input type="text" id="usuario" placeholder="Escribe tu usuario" required />
+          </label>
+
+          <label>
+            Contraseña
+            <input type="password" id="contrasena" placeholder="Escribe tu contraseña" required />
+          </label>
+
+          <label>
+            Rol
+            <select id="rol" required>
+              <option value="Estudiante">Estudiante</option>
+              <option value="Profesor">Profesor</option>
+            </select>
+          </label>
+
+          <button type="submit" class="boton-login">Entrar</button>
+        </form>
+
+        <p id="mensajeLogin" class="mensaje-login"></p>
+      </div>
+
+      <div class="contenedor bloque-login">
+        <div class="titulo-login">
+          <h2>Crear una cuenta</h2>
+          <p>Registra un usuario nuevo para entrar al sistema.</p>
+        </div>
+
+        <form id="formRegistro" class="formulario-login">
+          <label>
+            Usuario nuevo
+            <input type="text" id="nuevoUsuario" placeholder="Escribe un usuario" required />
+          </label>
+
+          <label>
+            Contraseña nueva
+            <input type="password" id="nuevaContrasena" placeholder="Escribe una contraseña" required />
+          </label>
+
+          <label>
+            Rol
+            <select id="nuevoRol" required>
+              <option value="Estudiante">Estudiante</option>
+              <option value="Profesor">Profesor</option>
+            </select>
+          </label>
+
+          <button type="submit" class="boton-login">Registrarse</button>
+        </form>
+
+        <p id="mensajeRegistro" class="mensaje-login"></p>
+      </div>
+    </section>
+
+    <section class="seccion-programas" id="cursos">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Nuestros programas</h2>
+        <div class="grilla-programas">
+          <div class="programa">
+            <h3>Licenciatura</h3>
+            <p>
+              Aprenderás conocimientos importantes para prepararte mejor para tu futuro profesional.
+            </p>
+          </div>
+          <div class="programa">
+            <h3>Maestrías</h3>
+            <p>
+              Profundiza en temas avanzados y adquiere experiencia práctica para crecer en tu campo.
+            </p>
+          </div>
+          <div class="programa">
+            <h3>Capacitación</h3>
+            <p>
+              Cursos cortos y talleres útiles para mejorar tus habilidades y aprender cosas nuevas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contacto" class="pie-pagina">
+      <div class="contenedor">
+        <p>AcademiaPlus © 2026 | Educación para transformar tu futuro</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
